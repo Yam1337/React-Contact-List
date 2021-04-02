@@ -86,14 +86,7 @@ function Contacts() {
                   </div>
                 </div>
                 <div>
-                  <input
-                    type="checkbox"
-                    onChange={() => {
-                      addCheck(x.id);
-                    }}
-                    checked={checkCheck(x.id)}
-                    readOnly
-                  />
+                  <input type="checkbox" checked={checkCheck(x.id)} readOnly />
                 </div>
               </div>
             );
