@@ -1,0 +1,36 @@
+.contactList {
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #bbbbbb;
+}
+.contact img {
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #bbbbbb;
+  margin: 3px;
+}
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: white;
+  color: #bbbbbb;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 1px solid #bbbbbb;
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+}
+.name {
+  font-weight: bold;
+}
+.myContact {
+  display: flex;
+  align-items: center;
+}
