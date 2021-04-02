@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-Contact-List/static/css/main.65065a0f.chunk.css",
+    "main.js": "/React-Contact-List/static/js/main.0c58abb0.chunk.js",
+    "main.js.map": "/React-Contact-List/static/js/main.0c58abb0.chunk.js.map",
+    "runtime-main.js": "/React-Contact-List/static/js/runtime-main.bb86819d.js",
+    "runtime-main.js.map": "/React-Contact-List/static/js/runtime-main.bb86819d.js.map",
+    "static/js/2.749e6976.chunk.js": "/React-Contact-List/static/js/2.749e6976.chunk.js",
+    "static/js/2.749e6976.chunk.js.map": "/React-Contact-List/static/js/2.749e6976.chunk.js.map",
+    "static/js/3.6afa63bf.chunk.js": "/React-Contact-List/static/js/3.6afa63bf.chunk.js",
+    "static/js/3.6afa63bf.chunk.js.map": "/React-Contact-List/static/js/3.6afa63bf.chunk.js.map",
+    "index.html": "/React-Contact-List/index.html",
+    "static/css/main.65065a0f.chunk.css.map": "/React-Contact-List/static/css/main.65065a0f.chunk.css.map",
+    "static/js/2.749e6976.chunk.js.LICENSE.txt": "/React-Contact-List/static/js/2.749e6976.chunk.js.LICENSE.txt",
+    "static/media/loupe.803521ca.svg": "/React-Contact-List/static/media/loupe.803521ca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb86819d.js",
+    "static/js/2.749e6976.chunk.js",
+    "static/css/main.65065a0f.chunk.css",
+    "static/js/main.0c58abb0.chunk.js"
+  ]
+}
