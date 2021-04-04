@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useGlobalInput } from "../search/Search";
+import PropagateLoader from "react-spinners/PropagateLoader";
 import "./Contacts.css";
 
 function Contacts() {
@@ -7,8 +8,10 @@ function Contacts() {
   const [contacts, setContacts] = useState([]);
   const [box] = useState([]);
   const [check, setCheck] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetchItems();
   }, []);
   const fetchItems = async () => {
@@ -21,6 +24,7 @@ function Contacts() {
     } else {
       console.log("API ERR");
     }
+    setLoading(false);
   };
 
   //   SORT BY LAST_NAME
@@ -52,68 +56,88 @@ function Contacts() {
   };
 
   return (
-    <div className="contactList">
-      {contacts
-        .filter((y) => {
-          if (inputValue === "") {
-            return y;
-          } else {
-            return (
-              y.first_name.toLowerCase().includes(inputValue.toLowerCase()) ||
-              y.last_name.toLowerCase().includes(inputValue.toLowerCase()) ||
-              y.email.toLowerCase().includes(inputValue.toLowerCase())
-            );
-          }
-        })
-        .map((x) => {
-          if (x.avatar === null) {
-            return (
-              <div
-                className="contact"
-                onClick={() => {
-                  addCheck(x.id);
-                }}
-              >
-                <div className="myContact">
-                  <div className="initials">
-                    {x.first_name.charAt(0) + x.last_name.charAt(0)}
-                  </div>
-                  <div>
-                    <div className="name">
-                      {x.first_name + " " + x.last_name}
+    <div>
+      {loading ? (
+        <div className="loader">
+          <PropagateLoader color={"#3faca4"} loading={loading} size={15} />
+        </div>
+      ) : (
+        <div className="contactList">
+          {contacts
+            .filter((y) => {
+              if (inputValue === "") {
+                return y;
+              } else {
+                return (
+                  y.first_name
+                    .toLowerCase()
+                    .includes(inputValue.toLowerCase()) ||
+                  y.last_name
+                    .toLowerCase()
+                    .includes(inputValue.toLowerCase()) ||
+                  y.email.toLowerCase().includes(inputValue.toLowerCase())
+                );
+              }
+            })
+            .map((x) => {
+              if (x.avatar === null) {
+                return (
+                  <div
+                    className="contact"
+                    onClick={() => {
+                      addCheck(x.id);
+                    }}
+                  >
+                    <div className="myContact">
+                      <div className="initials">
+                        {x.first_name.charAt(0) + x.last_name.charAt(0)}
+                      </div>
+                      <div>
+                        <div className="name">
+                          {x.first_name + " " + x.last_name}
+                        </div>
+                        <div>{x.email}</div>
+                      </div>
                     </div>
-                    <div>{x.email}</div>
-                  </div>
-                </div>
-                <div>
-                  <input type="checkbox" checked={checkCheck(x.id)} readOnly />
-                </div>
-              </div>
-            );
-          } else {
-            return (
-              <div
-                className="contact"
-                onClick={() => {
-                  addCheck(x.id);
-                }}
-              >
-                <div className="myContact">
-                  <img alt="" src={x.avatar} />
-                  <div>
-                    <div className="name">
-                      {x.first_name + " " + x.last_name}
+                    <div>
+                      <input
+                        type="checkbox"
+                        checked={checkCheck(x.id)}
+                        readOnly
+                      />
                     </div>
-                    <div>{x.email}</div>
                   </div>
-                </div>
-                <div>
-                  <input type="checkbox" checked={checkCheck(x.id)} readOnly />
-                </div>
-              </div>
-            );
-          }
-        })}
+                );
+              } else {
+                return (
+                  <div
+                    className="contact"
+                    onClick={() => {
+                      addCheck(x.id);
+                    }}
+                  >
+                    <div className="myContact">
+                      <img alt="" src={x.avatar} />
+                      <div>
+                        <div className="name">
+                          {x.first_name + " " + x.last_name}
+                        </div>
+                        <div>{x.email}</div>
+                      </div>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        checked={checkCheck(x.id)}
+                        readOnly
+                      />
+                    </div>
+                  </div>
+                );
+              }
+            })}
+        </div>
+      )}
     </div>
   );
 }
