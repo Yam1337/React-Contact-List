@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/React-Contact-List/static/css/main.eefde896.chunk.css",
-    "main.js": "/React-Contact-List/static/js/main.eff5d6de.chunk.js",
-    "main.js.map": "/React-Contact-List/static/js/main.eff5d6de.chunk.js.map",
-    "runtime-main.js": "/React-Contact-List/static/js/runtime-main.bb86819d.js",
-    "runtime-main.js.map": "/React-Contact-List/static/js/runtime-main.bb86819d.js.map",
-    "static/js/2.749e6976.chunk.js": "/React-Contact-List/static/js/2.749e6976.chunk.js",
-    "static/js/2.749e6976.chunk.js.map": "/React-Contact-List/static/js/2.749e6976.chunk.js.map",
-    "static/js/3.6afa63bf.chunk.js": "/React-Contact-List/static/js/3.6afa63bf.chunk.js",
-    "static/js/3.6afa63bf.chunk.js.map": "/React-Contact-List/static/js/3.6afa63bf.chunk.js.map",
+    "main.css": "/React-Contact-List/static/css/main.192b27bb.chunk.css",
+    "main.js": "/React-Contact-List/static/js/main.7ae7a3ea.chunk.js",
+    "main.js.map": "/React-Contact-List/static/js/main.7ae7a3ea.chunk.js.map",
+    "runtime-main.js": "/React-Contact-List/static/js/runtime-main.7e841035.js",
+    "runtime-main.js.map": "/React-Contact-List/static/js/runtime-main.7e841035.js.map",
+    "static/js/2.a2b91a20.chunk.js": "/React-Contact-List/static/js/2.a2b91a20.chunk.js",
+    "static/js/2.a2b91a20.chunk.js.map": "/React-Contact-List/static/js/2.a2b91a20.chunk.js.map",
+    "static/js/3.f0e007e6.chunk.js": "/React-Contact-List/static/js/3.f0e007e6.chunk.js",
+    "static/js/3.f0e007e6.chunk.js.map": "/React-Contact-List/static/js/3.f0e007e6.chunk.js.map",
     "index.html": "/React-Contact-List/index.html",
-    "static/css/main.eefde896.chunk.css.map": "/React-Contact-List/static/css/main.eefde896.chunk.css.map",
-    "static/js/2.749e6976.chunk.js.LICENSE.txt": "/React-Contact-List/static/js/2.749e6976.chunk.js.LICENSE.txt",
+    "static/css/main.192b27bb.chunk.css.map": "/React-Contact-List/static/css/main.192b27bb.chunk.css.map",
+    "static/js/2.a2b91a20.chunk.js.LICENSE.txt": "/React-Contact-List/static/js/2.a2b91a20.chunk.js.LICENSE.txt",
     "static/media/loupe.803521ca.svg": "/React-Contact-List/static/media/loupe.803521ca.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb86819d.js",
-    "static/js/2.749e6976.chunk.js",
-    "static/css/main.eefde896.chunk.css",
-    "static/js/main.eff5d6de.chunk.js"
+    "static/js/runtime-main.7e841035.js",
+    "static/js/2.a2b91a20.chunk.js",
+    "static/css/main.192b27bb.chunk.css",
+    "static/js/main.7ae7a3ea.chunk.js"
   ]
 }
